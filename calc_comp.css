@@ -1,0 +1,58 @@
+html {
+  background-color: black;
+}
+.content{
+  position: fixed;
+  left:35%;
+
+}
+
+
+.number1:hover, .number2:hover, .number3:hover, .number4:hover, .operator1:hover, .operator2:hover{
+  font-size: 45px;
+  background-color: white;
+  color: black;
+  border: 4px solid #4CAF50;
+  border-radius: 12px;
+}
+
+
+.number1, .number2, .number3, .number4, .operator1, .operator2 {
+  font-size: 45px;
+  background-color: black;
+  color: white;
+  border: 4px solid #4CAF50;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0px, auto;
+
+}
+
+.number1, .number1, .number3, .operator1{
+  float: left;
+}
+
+.tab1{
+  color: white;
+  background-color: black;
+  border: 2px solid #4CAF50;
+}
+
+.tab1:hover{
+  color: black;
+  background-color: white;
+  border: 2px solid #4CAF50;
+}
+
+
+
+
+
+
+.textbox{
+  text-align: center;
+  background-color: black;
+  font-size: 45px;
+  width: 310px;
+  border: 4px solid #4CAF50;
+}

@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="calc_comp.css"> <!--https://css-tricks.com/resolution-specific-stylesheets/-->
+    <link rel="stylesheet" media="screen and (max-device-width: 800px)" href="calc_mobile.css">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class = "bar" id = "tab_bar" role = "navigation">
+      <button class = "tab1" id = "Calculator" accesskey="h">Home/Calculator</button>
+      <button class = "tab1" id = "table_tab" accesskey="s">Shortcuts</button>
+    </div>
+
+    <div class = "content" id = "content" role = "main">
+      <div class = "main" id = "main">
+      <input type="text" class = "textbox" name="display" id="display" disabled>
+      <div class="number_group">
+      <div id = "first_row">
+      <input type = "button" class = "number1" name = "one" value="1" onclick="display.value += '1'" accesskey="1">
+      <input type = "button" class = "number1" name = "two" value="2" onclick="display.value += '2'" accesskey="2">
+      <input type = "button" class = "number1" name = "three" value="3" onclick="display.value += '3'" accesskey="3">
+      </div>
+      <div id = "second_row">
+      <input type = "button" class = "number2" name = "four" value="4" onclick="display.value += '4'" accesskey="4">
+      <input type = "button" class = "number2" name = "five" value="5" onclick="display.value += '5'" accesskey="5">
+      <input type = "button" class = "number2" name = "six" value="6" onclick="display.value += '6'" accesskey="6">
+      </div>
+      <div id = "third_row">
+      <input type = "button" class = "number3" name = "seven" value="7" onclick="display.value += '7'" accesskey="7">
+      <input type = "button" class = "number3" name = "eight" value="8" onclick="display.value += '8'" accesskey="8">
+      <input type = "button" class = "number3" name = "nine" value="9" onclick="display.value += '9'" accesskey="9">
+      </div>
+      <div id = "fourth_row">
+      <input type = "button" class = "number4" name = "zero" value="0" onclick="display.value += '0'" accesskey="0">
+      <input type = "button" class = "number4" name = "decimal" value="." onclick="display.value += '.'" accesskey=".">
+      <input type = "button" class = "number4" name = "equal" value="=" onclick="display.value = eval(display.value)" accesskey="e">
+      </div>
+      </div>
+      <div class = "operators">
+      <div id = "op_row1">
+      <input type = "button" class = "operator1" name = "clear" value="C" onclick="display.value = ''" accesskey="c">
+      <input type = "button" class = "operator1" name = "plus" value="+" onclick="display.value  += '+'" accesskey="p">
+      <input type = "button" class = "operator1" name = "minus" value="-" onclick="display.value  += '-'" accesskey="m">
+      </div>
+      <div id = "op_row2">
+      <input type = "button" class = "operator2" name = "multiply" value="*" onclick="display.value  += '*'" accesskey="t">
+      <input type = "button" class = "operator2" name = "divide" value="/" onclick="display.value  += '/'" accesskey="w">
+      <input type = "button" class = "operator2" name = "exponent" value="^" onclick="display.value  += '**'" accesskey="e">
+
+      </div>
+      </div>
+      </div>
+      <div class = "Shortcut_Table" id = "Shortcut_Table">
+        <h2 style = "color:white">Keyboard Shortcuts (Not For Mobile)</h2>
+        <table style = "color:white", border="1">
+          <tr>
+            <th align = "left">Function:</th>
+            <th align = "left">Key:</th>
+          </tr>
+          <tr>
+            <td>Home/Calculator Tab</td>
+            <td>h<td>
+          </tr>
+          <tr>
+            <td>Shortcut Tab</td>
+            <td>s<td>
+          </tr>
+          <tr>
+            <td>1,2,3,4,5,6,7,8,9,0 :</td>
+            <td>1,2,3,4,5,6,7,8,9,0</td>
+          </tr>
+          <tr>
+            <td>. :</td>
+            <td>d</td>
+          </tr>
+          <tr>
+            <td>= :</td>
+            <td>e</td>
+          </tr>
+          <tr>
+            <td>C :</td>
+            <td>c</td>
+          </tr>
+          <tr>
+            <td>- :</td>
+            <td>m</td>
+          </tr>
+          <tr>
+            <td>* :</td>
+            <td>m</td>
+          </tr>
+          <tr>
+            <td>/ :</td>
+            <td>w</td>
+          </tr>
+          <tr>
+            <td>^ or ** :</td>
+            <td>e</td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+  </body>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src = "calc.js"></script>
+</html>
