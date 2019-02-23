@@ -24,6 +24,7 @@ html {
 
 .tab1{
   color: white;
+  font-size: 25px;
   background-color: black;
   border: 2px solid #4CAF50;
 }
@@ -31,6 +32,7 @@ html {
 .tab1:hover{
   color: black;
   background-color: white;
+  font-size: 25px;
   border: 2px solid #4CAF50;
 }
 
